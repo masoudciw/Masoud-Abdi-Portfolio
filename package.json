@@ -21,7 +21,7 @@
     "build": "cd client && npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "install": "cd server && npm i && cd ../client && npm i"
+    "install": "npm i"
   },
   "eslintConfig": {
     "extends": [
