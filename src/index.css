@@ -159,10 +159,13 @@ i:hover {
 
 .myProjects {
   margin: 0 auto;
-  width: 500px;
-  height: 560px;
+  width: 1100px;
   margin-top: 10px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .myProjects .card {
@@ -170,6 +173,7 @@ i:hover {
   margin: 0 auto;
   border: 2px solid black;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .myProjects .card a {
@@ -191,9 +195,57 @@ i:hover {
   transition: .3s;
 }
 
+.sampleProject {
+  margin: 0 auto;
+  width: 500px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.sampleProject .card1 {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.sampleProject .card1 img {
+  width: 498px;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.sampleProject .card1 a {
+  font-size: 18px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 150px;
+  margin: 0 auto;
+  background-color: rgb(21, 212, 40);
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.sampleProject .card1 a:hover {
+  border: 2px solid black;
+  background-color: transparent;
+  color: #000000;
+  transition: .3s;
+}
+
 @media only screen and (max-width: 1215px) {
   .aboutPage {
     width: 1000px;
+  }
+
+  .myProjects{
+    width: 500px;
   }
 }
 
@@ -293,12 +345,24 @@ i:hover {
     margin-bottom: 20px;
   }
 
+  .sampleProject {
+    width: 350px;
+  }
+
+  .sampleProject .card1 {
+    width: 350px;
+  }
+
   .myProjects {
     width: 350px;
   }
 
   .myProjects .card {
     width: 350px;
+  }
+
+  .sampleProject .card1 img {
+    width: 348px;
   }
 
   .resumePage {
